@@ -26,7 +26,7 @@ const InputDetails = () => {
       ? "Email"
       : !userName
       ? "Username"
-      : !null;
+      : null;
 
     if (missingField) {
       return alert(`Please enter ${missingField} !`);
