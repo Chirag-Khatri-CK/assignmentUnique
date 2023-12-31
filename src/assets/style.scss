@@ -1,0 +1,28 @@
+$app-color: rgb(217, 112, 131);
+
+@import "./components/table.scss";
+@import "./components/input-details.scss";
+
+// * {
+//   outline: 2px solid red; //for checking overflow of elements
+// }
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .main {
+    padding: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .main {
+    padding: 1rem;
+    flex-direction: column;
+  }
+}

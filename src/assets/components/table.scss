@@ -1,0 +1,50 @@
+table {
+  border-collapse: collapse;
+  color: #000;
+  font-size: 1.25rem;
+  width: 40%;
+
+  caption {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    span {
+      color: $app-color;
+      margin-right: 0.5rem;
+      font-weight: 700;
+    }
+  }
+
+  tr {
+    padding: 0.25rem;
+
+    &:nth-child(even) {
+      background-color: rgba($app-color, 0.13);
+    }
+
+    &:nth-child(odd) {
+      background-color: rgba($app-color, 0.31);
+    }
+  }
+
+  div {
+    display: "table-cell";
+    padding: 0.5rem 0.75rem;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  table {
+    caption {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  table {
+    width: 100%;
+  }
+}
